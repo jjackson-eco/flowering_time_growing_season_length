@@ -123,7 +123,7 @@ cap_gsl_pops <- tibble(pop = as.numeric(colnames(cap_gsl)),
 #_______________________________________________________________________________
 #### 5. Merging season length to the flowering data ####
 
-lythrum99 <- read_csv("data/lythrum_phenology_99.csv", na = c("", " ", ".")) %>% 
+lythrum99 <- read_csv("../lythrum_phenology_99.csv", na = c("", " ", ".")) %>% 
   dplyr::select(pop, plant, morph, flowering_start = flwrstar, flowering_length = flwrleng) %>% 
   na.omit() %>% 
   left_join(y = cap_gsl_pops, by = "pop")

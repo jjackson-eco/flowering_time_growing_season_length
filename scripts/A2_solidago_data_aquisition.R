@@ -32,7 +32,7 @@ solidago_coords <- solidago_coords %>%
 #### 2. Solidago flowering data ####
 
 # Read raw data & summarize mean and sd by population
-solidago_dat <- read.csv("data/Solidago_FloweringStartUppsalaGarden2005.csv")
+solidago_dat <- read.csv("../Solidago_FloweringStartUppsalaGarden2005.csv")
 solidago_dat <- solidago_dat[, c("pop", "ind", "FlStart")] %>%
   setNames(c("pop", "ind", "flowering_start"))
 solidago_dat$flowering_start <- as.Date(paste0("2005-", solidago_dat$flowering_start), format = "%Y-%d-%b")
