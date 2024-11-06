@@ -6,6 +6,8 @@
 #### 2024-11-05
 #### Repository created by John Jackson and John S. Park
 
+[![DOI](https://zenodo.org/badge/883832244.svg)](https://doi.org/10.5281/zenodo.14045208)
+
 ---
 
 This repository is a reproducible analysis pipeline for the manuscript *Testing a general theory for flowering time shift as a function of growing season length*. It contains all data used in analysis, 
